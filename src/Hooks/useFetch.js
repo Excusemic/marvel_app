@@ -30,6 +30,8 @@ export const useFetch = (searchTerm, startYear, endYear, comicId) => {
         response = await axios.get(`${baseUrl}/${comicId}`, {
           params: {
             apikey: publicKey,
+            ts,
+            hash
           },
         })
       }
